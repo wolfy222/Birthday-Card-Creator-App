@@ -15,14 +15,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/unsplash" />
+        app:srcCompat="@drawable/cake"
+        android:contentDescription="@string/todo" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
-        android:text="Happy Birthday"
+        android:text="@string/happy_birthday"
+        android:textAlignment="center"
         android:textColor="@color/colorPrimary"
         android:textSize="48sp"
         android:textStyle="bold"

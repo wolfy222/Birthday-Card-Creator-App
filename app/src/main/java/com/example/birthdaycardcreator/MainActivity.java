@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity
     {
 
         Intent intent = new Intent(this, BirthdayCardActivity.class);
-        intent.putExtra("name", nameInput.toString());
+        intent.putExtra("name", nameInput.getText().toString());
         startActivity(intent);
-        Toast.makeText(this, "Name is "+ nameInput.toString(), Toast.LENGTH_SHORT).show();
+    //    Toast.makeText(this, "Name is "+ nameInput.getText().toString(), Toast.LENGTH_LONG).show();
     }
 }
