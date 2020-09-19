@@ -2,6 +2,7 @@ package com.example.birthdaycardcreator;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -22,6 +23,10 @@ public class MainActivity extends AppCompatActivity
 
     public void createBirthdayCard(View view)
     {
-        Toast.makeText(this, "Name is "+ nameInput, Toast.LENGTH_SHORT).show();
+
+        Intent intent = new Intent(this, BirthdayCardActivity.class);
+        intent.putExtra("name", nameInput.toString());
+        startActivity(intent);
+        Toast.makeText(this, "Name is "+ nameInput.toString(), Toast.LENGTH_SHORT).show();
     }
 }
